@@ -1,5 +1,5 @@
 extends layout
 
 block content
-  h1= news.title
-  p Welcome to #{news.title} #{news.number}
+  h1= news.articles[0].author
+  p Welcome to #{news.articles[0].title} 
