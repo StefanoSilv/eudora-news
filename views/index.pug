@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= news.articles[0].author
-  p Welcome to #{news.articles[0].title} 
+  div(class='container')
+    div(class='navbar')
+      div(class='logo')='Eudora News'
+      div(class='index')
+    h1(class='title')='Le notizie sui temi cari alla comunità Eudora'
+    div(class='searchBar')
+      input(id='searchInput' type='text' placeholder='Cerca...')
+    div(class='grid')
+    div(class='footer')
+      div='Developed by Stefano Silvestrini'
+      a(href='https://newsapi.org')="Powered by News API"
