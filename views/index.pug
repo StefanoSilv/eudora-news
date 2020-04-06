@@ -2,9 +2,8 @@ extends layout
 
 block content
   div(class='container')
-    div(class='navbar')
-      a( href="https://eudoraassociation.home.blog" target="_blank" class='index')
-      h1(class='logo')='News'
+    a( href="https://eudoraassociation.home.blog" target="_blank" class='navbar')
+      div(class='eudora-news')="News"
     h3(class='title')='Le notizie sui temi cari alla comunità Eudora'
     div(class='grid')
       each article in news
