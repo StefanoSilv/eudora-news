@@ -28,13 +28,13 @@ a {
   text-align: center;
 }
 
-.snippets {
+.news {
   text-align: center;
   width: 900px;
 }
 
 @media screen and (max-width: 920px) {
-  .snippets {
+  .news {
     justify-self: center;
     width: 700px;
   }
@@ -45,7 +45,7 @@ a {
 }
 
 @media screen and (max-width: 720px) {
-  .snippets {
+  .news {
     justify-self: center;
     width: 500px;
   }
@@ -55,7 +55,7 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .snippets {
+  .news {
     justify-self: center;
     width: 350px;
   }
@@ -65,7 +65,7 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .snippets {
+  .news {
     justify-self: center;
     width: 300px;
   }
@@ -101,7 +101,7 @@ input[type="text"] {
   width: 70%;
 }
 
-.snipptesCode {
+.newsCode {
   line-height: 30px;
   padding-left: 30px;
   padding-right: 30px;
