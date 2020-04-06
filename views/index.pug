@@ -7,10 +7,12 @@ block content
     h3(class='title')='Le notizie sui temi cari alla comunità Eudora'
     div(class='grid')
       each article in news
-        div(class="news")
-          h2(class="newsTitle")= article.title
-          div(class="newsDescription")= article.description
-          a(href=article.url target="_blank")="Vai all'articolo completo"
+        div(class="grid-news")
+          img(src= article.urlToImage alt= article.description)
+          div(class="news")
+            h2(class="newsTitle")= article.title
+            div(class="newsDescription")= article.description
+            a(href=article.url target="_blank")="Vai all'articolo completo"
     div(class='footer')
       div='Developed by Stefano Silvestrini'
       a(href='https://newsapi.org')="Powered by News API"

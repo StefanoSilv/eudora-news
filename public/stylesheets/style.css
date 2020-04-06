@@ -23,6 +23,18 @@ a {
   width: 900px;
 }
 
+.grid-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  margin-top: 50px;
+  grid-row-gap: 30px;
+  width: 900px;
+  background: rgb(0, 81, 147);
+  box-shadow: 20px 30px 35px -4px rgba(0, 0, 0, 0.24);
+  border-radius: 20px;
+}
+
 .navbar {
   width: 100%;
   background-image: url(https://res.cloudinary.com/do8qdtgy8/image/upload/v1571301644/Eudora/Eudora_logo_k0a77l.png);
@@ -38,63 +50,92 @@ a {
   font-weight: bold;
   font-size: 30px;
   font-style: italic;
-  padding: 10px;
+  padding-top: 30px;
+  padding-right: 80px;
 }
 
 .news {
   text-align: center;
-  width: 900px;
+  width: 450px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.grid > .grid-news > img {
+  width: 450px;
+  padding: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .news > a {
-  margin: 20px;
   display: block;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 920px) {
-  .news {
+  .news,
+  .grid > .grid-news > img {
     justify-self: center;
-    width: 700px;
+    width: 350px;
   }
-  .grid {
+  .grid,
+  .grid-news {
     width: 720px;
     justify-self: center;
+  }
+  .eudora-news {
+    padding-top: 30px;
+    padding-right: 15px;
   }
 }
 
 @media screen and (max-width: 720px) {
-  .news {
+  .news,
+  .grid > .grid-news > img {
     justify-self: center;
-    width: 500px;
+    width: 250px;
   }
-  .grid {
+  .grid,
+  .grid-news {
     width: 600px;
+  }
+  .eudora-news {
+    padding-top: 0px;
+    padding-right: 0px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .news {
+  .news,
+  .grid > .grid-news > img {
     justify-self: center;
-    width: 350px;
+    width: 175px;
   }
-  .grid {
+  .grid,
+  .grid-news {
     width: 500px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .news {
+  .news,
+  .grid > .grid-news > img {
     justify-self: center;
-    width: 300px;
+    width: 150px;
   }
-  .grid {
+  .grid,
+  .grid-news {
     width: 350px;
     justify-self: center;
   }
 }
 
-.news > div {
-  border-radius: 10px;
+@media screen and (max-width: 440px) {
+  .eudora-news {
+    padding-top: 10px;
+    padding-right: 0px;
+  }
 }
 
 .title {
@@ -111,8 +152,13 @@ a {
   padding-right: 30px;
   font-size: 16px;
   text-align: left;
-  color: black;
+  color: white;
   text-align: center;
+}
+
+.newsTitle {
+  color: white;
+  padding-right: 10px;
 }
 
 .footer {
