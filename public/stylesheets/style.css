@@ -10,7 +10,7 @@ a {
 
 .container {
   display: grid;
-  grid-template-rows: 2fr 2fr 2fr auto 2fr;
+  grid-template-rows: 2fr 2fr auto 2fr;
   justify-content: center;
 }
 
@@ -93,6 +93,9 @@ a {
 .title {
   text-align: center;
   padding: 10px;
+  margin-top: 20px;
+  font-style: italic;
+  font-weight: normal;
 }
 
 input[type="text"] {
@@ -127,6 +130,7 @@ input[type="text"] {
 .logo {
   align-self: center;
   font-style: italic;
+  text-decoration: underline;
 }
 
 .footer {
