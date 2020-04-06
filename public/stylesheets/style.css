@@ -34,6 +34,11 @@ a {
   width: 900px;
 }
 
+.news > a {
+  margin: 20px;
+  display: block;
+}
+
 @media screen and (max-width: 920px) {
   .news {
     justify-self: center;

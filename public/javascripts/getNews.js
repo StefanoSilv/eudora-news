@@ -57,6 +57,7 @@ module.exports = function(req, res, next) {
     arrays.forEach(array => {
       q += " OR " + "(" + array.join(" OR ") + ")";
     });
+    q += "NOT porno";
     return q;
   };
 
@@ -71,6 +72,7 @@ module.exports = function(req, res, next) {
       pageSize: 100
     })
     .then(response => {
+      console.log(response.articles);
       res.render("index", { news: response.articles });
     });
 };
