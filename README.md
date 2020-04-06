@@ -1,4 +1,4 @@
 # eudora-news
 
-# News collector for the Eudora association members
-# Deployed at https://eudora-news.herokuapp.com/
+News collector for the Eudora association members
+Deployed [here](https://eudora-news.herokuapp.com)
