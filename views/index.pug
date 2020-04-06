@@ -3,8 +3,8 @@ extends layout
 block content
   div(class='container')
     div(class='navbar')
-      div(class='logo')='Eudora News'
       div(class='index')
+      h1(class='logo')='News'
     h1(class='title')='Le notizie sui temi cari alla comunità Eudora'
     div(class='searchBar')
       input(id='searchInput' type='text' placeholder='Cerca...')
@@ -12,7 +12,7 @@ block content
       each article in news
         div(class="news")
           h2(class="newsTitle")= article.title
-          pre(class="snipptesCode")= article.description
+          div(class="newsDescription")= article.description
     div(class='footer')
       div='Developed by Stefano Silvestrini'
       a(href='https://newsapi.org')="Powered by News API"

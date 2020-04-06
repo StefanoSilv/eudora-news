@@ -1,6 +1,7 @@
 body {
   padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: rgb(0, 81, 147);
 }
 
 a {
@@ -75,8 +76,7 @@ a {
   }
 }
 
-pre {
-  overflow-x: scroll;
+.news > div {
   border-radius: 10px;
 }
 
@@ -101,14 +101,14 @@ input[type="text"] {
   width: 70%;
 }
 
-.newsCode {
+.newsDescription {
   line-height: 30px;
   padding-left: 30px;
   padding-right: 30px;
   font-size: 16px;
   text-align: left;
-  background: black;
-  color: white;
+  color: black;
+  text-align: center;
 }
 
 .index {
@@ -121,6 +121,7 @@ input[type="text"] {
 
 .logo {
   align-self: center;
+  font-style: italic;
 }
 
 .footer {

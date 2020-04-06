@@ -71,7 +71,6 @@ module.exports = function(req, res, next) {
       pageSize: 100
     })
     .then(response => {
-      console.log(response.articles[0]);
       res.render("index", { news: response.articles });
     });
 };
