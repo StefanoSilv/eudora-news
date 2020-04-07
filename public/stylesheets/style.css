@@ -1,6 +1,7 @@
 body {
   font: 14px Arial, "Lucida Grande", Helvetica, sans-serif;
   color: rgb(0, 81, 147);
+  margin: 0;
 }
 
 .container {
@@ -89,4 +90,10 @@ a {
 .footer > div,
 .footer > a {
   padding-top: 80px;
+}
+
+@media screen and (max-width: 900px) {
+  .grid {
+    justify-content: space-evenly;
+  }
 }
