@@ -3,13 +3,14 @@ extends layout
 block content
   div(class='container')
     a( href="https://eudoraassociation.home.blog" target="_blank" class='navbar')
-      div(class='eudora-news')="News"
-    h3(class='title')='Le notizie sui temi cari alla comunità Eudora'
+      h1(class='title')='Le notizie sui temi cari alla comunità Eudora'
     div(class='grid')
       each article in news
         div(class="grid-news")
-          img(src= article.urlToImage alt= article.description)
+          div(class="image-news" style=`background-image: url( ${article.urlToImage})`)
           div(class="news")
+            small=article.source.name
+            small(class="date")=`${article.publishedAt.substr(8,2)}.${article.publishedAt.substr(5,2)}.${article.publishedAt.substr(0,4)}`
             h2(class="newsTitle")= article.title
             div(class="newsDescription")= article.description
             a(href=article.url target="_blank")="Vai all'articolo completo"

@@ -1,167 +1,83 @@
 body {
-  padding: 20px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Arial, "Lucida Grande", Helvetica, sans-serif;
   color: rgb(0, 81, 147);
-}
-
-a {
-  color: #00b7ff;
 }
 
 .container {
   display: grid;
-  grid-template-rows: 5fr 2fr auto 2fr;
+  grid-template-rows: 400px auto 200px;
   justify-content: center;
 }
 
+.navbar {
+  background-image: url(https://res.cloudinary.com/do8qdtgy8/image/upload/v1586246108/Eudora/Intreccio_70x100-min_vwkohh.jpg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.title {
+  z-index: 2;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
 .grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-between;
   margin-top: 50px;
   grid-row-gap: 30px;
-  width: 900px;
 }
 
 .grid-news {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  margin-top: 50px;
-  grid-row-gap: 30px;
-  width: 900px;
-  background: rgb(0, 81, 147);
-  box-shadow: 20px 30px 35px -4px rgba(0, 0, 0, 0.24);
-  border-radius: 20px;
+  grid-template-rows: 2fr 3fr;
+  width: 250px;
+  margin: 20px;
+  box-shadow: 2px 12px 38px -8px rgba(0, 0, 0, 0.27);
+  position: relative;
 }
 
-.navbar {
-  width: 100%;
-  background-image: url(https://res.cloudinary.com/do8qdtgy8/image/upload/v1571301644/Eudora/Eudora_logo_k0a77l.png);
+.image-news {
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-}
-
-.eudora-news {
-  float: right;
-  text-decoration: none;
-  color: rgb(0, 81, 147);
-  font-weight: bold;
-  font-size: 30px;
-  font-style: italic;
-  padding-top: 30px;
-  padding-right: 80px;
+  width: 100%;
 }
 
 .news {
-  text-align: center;
-  width: 450px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.grid > .grid-news > img {
-  width: 450px;
   padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  align-self: center;
 }
 
 .news > a {
-  display: block;
-  padding-top: 20px;
-}
-
-@media screen and (max-width: 920px) {
-  .news,
-  .grid > .grid-news > img {
-    justify-self: center;
-    width: 350px;
-  }
-  .grid,
-  .grid-news {
-    width: 720px;
-    justify-self: center;
-  }
-  .eudora-news {
-    padding-top: 30px;
-    padding-right: 15px;
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .news,
-  .grid > .grid-news > img {
-    justify-self: center;
-    width: 250px;
-  }
-  .grid,
-  .grid-news {
-    width: 600px;
-  }
-  .eudora-news {
-    padding-top: 0px;
-    padding-right: 0px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .news,
-  .grid > .grid-news > img {
-    justify-self: center;
-    width: 175px;
-  }
-  .grid,
-  .grid-news {
-    width: 500px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .news,
-  .grid > .grid-news > img {
-    justify-self: center;
-    width: 150px;
-  }
-  .grid,
-  .grid-news {
-    width: 350px;
-    justify-self: center;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .eudora-news {
-    padding-top: 10px;
-    padding-right: 0px;
-  }
-}
-
-.title {
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-  font-style: italic;
-  font-weight: normal;
+  bottom: 5px;
+  position: absolute;
 }
 
 .newsDescription {
-  line-height: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-  font-size: 16px;
-  text-align: left;
-  color: white;
-  text-align: center;
+  margin-bottom: 25px;
 }
 
-.newsTitle {
-  color: white;
-  padding-right: 10px;
+.date {
+  float: right;
 }
-
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -170,5 +86,5 @@ a {
 
 .footer > div,
 .footer > a {
-  padding-top: 20px;
+  padding-top: 80px;
 }

@@ -57,7 +57,7 @@ module.exports = function(req, res, next) {
     arrays.forEach(array => {
       q += " OR " + "(" + array.join(" OR ") + ")";
     });
-    q += "NOT porno";
+    q += "NOT porno NOT coglione NOT cesso";
     return q;
   };
 
