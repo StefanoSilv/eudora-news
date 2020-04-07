@@ -67,6 +67,7 @@ module.exports = function(req, res, next) {
       from: `${lastyear}`,
       to: `${today}`,
       language: "it",
+      excludeDomains: "dagospia.com",
       sortBy: "publishedAt",
       page: 1,
       pageSize: 100
